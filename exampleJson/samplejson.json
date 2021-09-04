@@ -2,7 +2,7 @@
     "EmpRecord": {
         "Employee": [
             {
-                "-id": "emp01",
+                "-id":  10,
                 "name": "Alex",
                 "job": "Developer",
                 "skills": "python, C/C++, paskal"
@@ -15,4 +15,61 @@
             }
         ]
     }
+}
+
+
+
+
+
+Class is git
+trainer is Divya
+Student - Gagan dept cse, sweta dept electrcal, Vatsal civil
+
+
+
+{
+    "class" : "git",
+    "trainer" : "Divya",
+    "student" : [
+        {
+            "name": "gagan",
+            "dept" :"Cse",
+            
+        },
+        {
+            "name": "sweta",
+            "dept" :"electrcal",
+            
+        },
+        {
+            "name": "Vatsal",
+            "dept" :"civil",
+            
+        }
+    ]
+}
+
+
+
+
+{
+    "class" : "HTML",
+    "trainer" : "Mukes",
+    "student" : [
+        {
+            "name": "gagan",
+            "dept" :"Cse",
+            
+        },
+        {
+            "name": "sweta",
+            "dept" :"electrcal",
+            
+        },
+        {
+            "name": "Vatsal",
+            "dept" :"civil",
+            
+        }
+    ]
 }
