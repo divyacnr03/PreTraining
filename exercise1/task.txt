@@ -1,0 +1,9 @@
+1) Create a json structure for representing the Student data  
+
+Name     Dept       avgScore
+Sweta    CSE         90
+Ronak    ECE         85
+
+
+
+

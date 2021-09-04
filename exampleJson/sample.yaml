@@ -1,0 +1,11 @@
+---
+EmpRecord:
+  Employee:
+  - "-id": emp01
+    name: Alex
+    job: Developer
+    skills: python, C/C++, paskal
+  - "-id": emp02
+    name: Bob
+    job: Tester
+    skills: lips, forton, REST APIs

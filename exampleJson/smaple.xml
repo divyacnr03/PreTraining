@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<EmpRecord>
+    <Employee id="emp01">
+        <name>Alex</name>
+        <job>Developer</job>
+        <skills>python, C/C++, paskal</skills>
+    </Employee>
+        
+    <Employee id="emp02">
+        <name>Bob</name>
+        <job>Tester</job>
+        <skills>lips, forton, REST APIs</skills>
+    </Employee>
+</EmpRecord>
