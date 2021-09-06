@@ -17,6 +17,26 @@
 
 
 
+var a =20;
+var b= 30;
+
+if (a>b)
+{
+    console.log("Larger number is " + a);
+
+}
+
+else{
+    console.log("Larger number is " + b);
+}
+
+
+
+
+
+
+
+
 
 
 
