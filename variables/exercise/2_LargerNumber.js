@@ -1,36 +1,11 @@
 // Write a code to display larger number between 2 numbers
-var a = 10;
-var b = 20;
-
-//Expected output is 20 
-
-if(a < b){
-    console.log(b)
-    }
-    
-else {console.log(a)
-    }
-    
+var num1 = 49;
+var num2 = 80;
 
 
-
-
-
-var a = 30;
-var b = 20;
-
-//Expected output is 30 
-
-if(a < b){
-    console.log(b)
-    }
-    
-else {console.log(a)
-    }
-    
-
-
-
-
-
+if (num1 > num2) {
+    console.log("num1 is Large number");
+} else {
+    console.log("num2 is Large number");
+}
 
