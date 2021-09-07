@@ -5,9 +5,9 @@ var P;
 var R;
 var T;
 
-P = 300;
-R = 5;
-T = 12;
+P = 81;
+R = 40;
+T = 27;
 
-SI = P * R * T;
+SI = P * R * T
 console.log(SI)
