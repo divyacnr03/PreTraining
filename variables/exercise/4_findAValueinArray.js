@@ -10,3 +10,21 @@
 // var list = [10, 20, 30, 40 ,50]
 // var x = 90
 // expected output : display is "element not found1"
+
+var list = [10, 20, 30, 40 ,50];
+var x = 90;
+var isPresent = false;
+var index;
+for (var i=0; i<list.length; i++) {
+    if (list[i] === x) {
+        isPresent = true;
+        index = i;
+        break;
+    }
+}
+
+if (isPresent) {
+    console.log(index);
+} else {
+    console.log("element not found");
+}
