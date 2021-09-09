@@ -1,10 +1,27 @@
-
-// Declare and assigned  array scores of test
-var scores = [10, 20, 30, 40, 50];
+// Input : You have a array of integers, display  all the elements of the array
 
 
-// Increase all the scores by 10 
-// ExpectedOutput : scores = [ 20, 30, 40, 50, 60];
+var inputArray = [10, 20, 30]
 
-//Syntax
+
+// Expected Output:
+// The sum is 60
+
+
+
+// for (var i = 0; i < 3; i++) {
+//     console.log(inputArray[i])
+// }
+
+
+// //syntax
+// // while (condition) {​
+// //     // code block to be executed​
+// //   }
+
+var j = 0;
+while (j == 100) {
+    console.log(inputArray[j])
+    j = j + 1;
+}
 
