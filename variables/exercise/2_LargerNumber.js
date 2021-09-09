@@ -26,6 +26,10 @@ if (a>b)
 
 }
 
+else if (a==b) {
+    console.log("print both" + a + "&" + b);
+}
+
 else{
     console.log("Larger number is " + b);
 }
