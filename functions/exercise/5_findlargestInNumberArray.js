@@ -9,3 +9,22 @@
 
 // Sample function : findLargestNumber([])
 // Expected return value : null
+
+
+function findLargestNumber(array) {
+  if (array.length === 1) {
+    return array[0];
+  }
+  if (array.length === 0) {
+    return null;
+  }
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] > array[i + 1]) {
+      return array[i];
+    }
+  }
+}
+
+console.log(findLargestNumber([5, 6, 12, 35, -12]));
+console.log(findLargestNumber([5]));
+console.log(findLargestNumber([]));

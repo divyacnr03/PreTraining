@@ -14,3 +14,8 @@
 
 // Sample function : andOperator(null, 1)
 // Expected return value : false
+
+
+function andOperator(a,b){
+    if()
+}
