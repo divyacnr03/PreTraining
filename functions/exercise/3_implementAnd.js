@@ -6,7 +6,11 @@ function andOperator(x, y){
     {
         x=0;
     }
-    
+    if (y == null)
+    {
+        y=0;
+    }
+
     if (x == 0){
         console.log("False")
     }
