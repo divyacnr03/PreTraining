@@ -4,11 +4,9 @@
 function minutesToSeconds(minutes){
     var seconds = minutes * 60;
     return seconds;
-
 }
-
-var inputMinutes = prompt("Enter minutes: ");
+var inputMinutes = 5;
 var result = minutesToSeconds(inputMinutes);
-console.log(result);
+console.log(inputMinutes + " Minutes = " + result + " Seconds");
 
 
