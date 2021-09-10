@@ -1,0 +1,7 @@
+// IGNORE THIS, THIS will be implemented after understing build functions
+// Sample function : formateDate(12, 01, 2020, 'mm-dd-yy')
+// Expected return value : 01-12-20
+
+// IGNORE THIS, THIS will be implemented after understing build functions
+// Sample function : formateDate(12, 01, 2020, 'mm-dd-yyyy')
+// Expected return value : 01-12-20
