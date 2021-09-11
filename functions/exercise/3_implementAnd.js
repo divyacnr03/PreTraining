@@ -17,5 +17,29 @@
 
 
 function andOperator(a,b){
-    if()
+    if(a === 0){
+        if(b === 1){
+           return false; 
+        } else if(b===0){
+            return false;
+        } else {
+            return false;
+        }
+    }
+    if(a===1){
+        if(b===1){
+            return true;
+        } else if(b===0){
+            return false;
+        } else{
+            return true;
+        }
+    }
+ return false
 }
+
+
+console.log(andOperator(0,1));
+console.log(andOperator(1,1));
+console.log(andOperator(0,0));
+console.log(andOperator(null,1));
