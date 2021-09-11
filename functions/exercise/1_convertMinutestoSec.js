@@ -3,3 +3,7 @@
 // Expected return value : The number of seconds is 600
 
 
+function convertMinuteToSeconds(min){
+    sec = min * 60;
+}
+console.log(convertMinuteToSec(10));

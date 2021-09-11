@@ -26,9 +26,9 @@ calculateSimpleInterest(interest , principal, term);
 calculateSimpleInterest(100, 20, 1);
 
 
-interest = interest + 1;
-term = term + 2;
+ interest = interest + 1;
+ term = term + 2;
 
-calculateSimpleInterest(principal, interest, term);
+ calculateSimpleInterest(principal, interest, term);
 
 
