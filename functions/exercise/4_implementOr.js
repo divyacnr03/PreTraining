@@ -14,3 +14,33 @@
 
 // Sample function : orOperator(null, 1)
 // Expected return value : true
+
+function orOperator(x,y)
+{
+    if(x===0)
+        {
+            if(y===0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        
+        }
+    else
+    {
+        return true;
+    }
+}
+
+console.log(orOperator(0,1));
+
+console.log(orOperator(1,1));
+
+console.log(orOperator(0,0));
+
+console.log(orOperator(null,1));
+
+

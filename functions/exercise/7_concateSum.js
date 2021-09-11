@@ -11,3 +11,17 @@
 
 // Sample function : sum(10, 'sweta')
 // Expected return value : 10sweta
+
+function sum(x,y){
+    return x + y
+}
+
+var addition = sum (10, 20);
+console.log(addition);
+
+var addition = sum ('sweta', 'patel');
+console.log(addition);
+
+var addition = sum (10, 'sweta');
+console.log(addition);
+

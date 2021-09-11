@@ -14,3 +14,35 @@
 
 // Sample function : andOperator(null, 1)
 // Expected return value : false
+
+
+function andOperator(x,y)
+{
+    if(x===1)
+    {
+        if(y===1){
+          return true;
+        }
+        else{
+            return false;
+        }
+    }
+    else
+    {
+        return false;
+    }
+}
+
+
+
+console.log(andOperator(1,1))
+
+console.log(andOperator(1,0))
+
+console.log(andOperator(0,0))
+
+console.log(andOperator(null,1))
+
+
+
+

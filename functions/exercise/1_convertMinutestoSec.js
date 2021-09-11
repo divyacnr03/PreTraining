@@ -3,3 +3,11 @@
 // Expected return value : The number of seconds is 600
 
 
+var minutes = 10
+function convertMinuteToSeconds(minutes){
+     return minutes * 60
+}
+
+var minutesToSeconds = convertMinuteToSeconds(10);
+console.log("The number of seconds is", minutesToSeconds)
+
