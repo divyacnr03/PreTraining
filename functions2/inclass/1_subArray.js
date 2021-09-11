@@ -77,4 +77,4 @@ var result2;
 result = animals.splice(2,3);
 console.log(animals);
 result2 = animals.slice(2,4);
-console.log(animals);
+
