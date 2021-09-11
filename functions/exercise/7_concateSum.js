@@ -11,3 +11,14 @@
 
 // Sample function : sum(10, 'sweta')
 // Expected return value : 10sweta
+
+
+function sum(a,b){
+    return a+b;
+    
+}
+
+console.log(sum(10,20));
+console.log(sum('sweta','patel1'));
+console.log(sum('10','sweta'));
+
