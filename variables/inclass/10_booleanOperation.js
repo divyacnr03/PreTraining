@@ -6,5 +6,3 @@ console.log("isPresent vallue is ", isPresent)
 
 
 
-
-isPresent = 
