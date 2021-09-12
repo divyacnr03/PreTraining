@@ -67,14 +67,16 @@
 
 
 
-var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+var animals = ['ant', 'bison', 'camel', 'duck', 'elephant']
+
+var result2;
+
+result2 = animals.slice(0,2);
+console.log(result2);
 
 
 var result;
-var result2;
+result = animals.slice(2,5);
+console.log(result);
 
-
-result = animals.splice(2,3);
-console.log(animals);
-result2 = animals.slice(2,4);
 
