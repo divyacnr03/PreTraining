@@ -1,14 +1,19 @@
 // POP the last element of an array 
 
 
-var inputArray = [10,20,86,42,68,94,56];
+var inputArray = [10, 20, 86, 42, 68, 94, 56];
 
 
-function pop(array){
+function pop(array) {
     var outputArray = [];
 
-    for(var i = 0 ;i < array.length -1 ; i ++ ){
-        outputArray[i] = array[i]
+    // for(var i = 0 ;i < array.length -1 ; i ++ ){
+    //     outputArray[i] = array[i]
+    // }
+    var i = 0;
+    while (i < array.length - 1) {
+        outputArray[i] = array[i];
+        i++;
     }
     return outputArray;
 }

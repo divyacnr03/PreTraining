@@ -1,7 +1,6 @@
 // Write a code to create subarray from a array
 
 // 0         1       2        3       4
-var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 
 // console.log(slice(animals,2));
 // expected output: Array ["camel", "duck", "elephant"]
@@ -14,9 +13,7 @@ var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 
 
 
-var result = []; // Output array
-var index = 2;
-var j = 0;
+
 
 // for(var i=0; i< animals.length; i++){
 //     if(i >= index){
@@ -46,11 +43,22 @@ var j = 0;
 
 // -----------------------------------
 
-for (var i = 2; i < animals.length; i++) {
-
-    result[i] = animals[i];
-    j++;
-
+var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+function subArray(array, index, maxInteration) {
+    var result = []; // Output array
+    var j = 0;
+    var max = maxInteration || array.length;
+    // for (var i = index; i < max; i++) {
+    //     result[j] = array[i];
+    //     j++;
+    // }
+    var i = index;
+    while (i < max) {
+        result[j] = array[i];
+        j++;
+        i++;
+    }
+    return result;
 }
 
 // i= 2; j=0;
@@ -61,9 +69,7 @@ for (var i = 2; i < animals.length; i++) {
 // result[4] = animals[2];
 
 
-
-
-console.log(result) // ["camel", "duck", "elephant"]
+console.log(subArray(animals, 2, 4)) // ["camel", "duck", "elephant"]
 
 
 

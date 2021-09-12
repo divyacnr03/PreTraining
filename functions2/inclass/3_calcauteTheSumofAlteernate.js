@@ -1,17 +1,25 @@
 // Write a function to return the sum of only the alternate array elements
-var inputArray = [10,20,86,42,68,94,56];
-var sumOfOddIndexNumber = 0;
+var inputArray = [10, 20, 86, 42, 68, 94, 56];
 
-for(var i = 1 ; i < inputArray.length; i = i + 2){
-    sumOfOddIndexNumber += inputArray[i]
+
+function sum() {
+    var sumOfOddIndexNumber = 0;
+    // for (var i = 1; i < inputArray.length; i = i + 2) {
+    //     sumOfOddIndexNumber += inputArray[i];
+    // }
+    var i = 1;
+    while (i < inputArray.length) {
+        sumOfOddIndexNumber += inputArray[i];
+        i = i + 2;
+    }
+    return sumOfOddIndexNumber;
 }
 
 // i = 1
 // sumOfOddIndexNumber = sumOfOddIndexNumber + inputArray[1]
 // inputArray[1] + inputArray[3] + inputArray[5]
 
-
-// console.log(sumOfOddIndexNumber)  // 20 + 42 + 94
+console.log(sum([10, 20, 86, 42, 68, 94, 56]))  // 20 + 42 + 94
 
 
 
@@ -23,13 +31,22 @@ for(var i = 1 ; i < inputArray.length; i = i + 2){
 
 
 // Write a function to return a array that increases teh value of every 3 element by 1
-var inputArray = [10,20,86,42,68,94,56];
-var outputArray = [];
-var j =0;
+var inputArray = [10, 20, 86, 42, 68, 94, 56];
 
-for(var i = 2; i < inputArray.length; i = i+3){
-     outputArray[j] = inputArray[i] + 1;
-     j++;
+function returnArray(array) {
+    var outputArray = [];
+    var j = 0;
+    // for (var i = 2; i < inputArray.length; i = i + 3) {
+    //     outputArray[j] = inputArray[i] + 1;
+    //     j++;
+    // }
+    var i = 2;
+    while (i < inputArray.length) {
+        outputArray[j] = inputArray[i] + 1;
+        j++;
+        i = i + 3
+    }
+    return outputArray;
 }
 
 
@@ -37,19 +54,43 @@ for(var i = 2; i < inputArray.length; i = i+3){
 // outputArray[0] = inputArray[2]
 // outputArray[1] = inputArray[5]
 
-// console.log(outputArray)  // [87, 95]
+console.log(returnArray([10, 20, 86, 42, 68, 94, 56]))  // [87, 95]
 
 
 
 
 
 // Write a function to return a array that increases teh value of every 3 element by 1
-var inputArray = [10,20,86,42,68,94,56];
-var outputArray = [];
-var j = 2;
+var inputArray = [10, 20, 86, 42, 68, 94, 56];
+
+function newArray(array) {
+    var outputArray = [];
+    j = 0;
+    // for (var i = 0; i < inputArray.length; i++){
+    // if(i === 2 || i === 5){
+    //     outputArray [i] = inputArray [i] + 1;
+    // }
+    // else 
+    // {
+    //     outputArray[i] = inputArray[i]
+    // }
+
+    // }
+    var i = 0;
+    while (i < inputArray.length) {
+        if (i === 2 || i === 5) {
+            outputArray[i] = inputArray[i] + 1;
+        }
+        else {
+            outputArray[i] = inputArray[i]
+        }
+        i++;
+    }
+    return outputArray;
+}
 
 // for(var i = 0;  i < inputArray.length ;  i++){
-    
+
 //     if(i == j){
 //         outputArray[i] = inputArray[i] + 1;
 //         j = j + 3;
@@ -61,7 +102,7 @@ var j = 2;
 
 
 // for(var i = 0;  i < inputArray.length ;  i++){
-    
+
 //     if(i === 2 || i === 5 ){
 //         outputArray[i] = inputArray[i] + 1;
 //     } else {
@@ -85,7 +126,7 @@ var j = 2;
 
 
 
-console.log(outputArray)  // [10,20,87,42,68,95,56];
+console.log(newArray([10, 20, 86, 42, 68, 94, 56]))  // [10,20,87,42,68,95,56];
 
 
 

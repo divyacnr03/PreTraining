@@ -3,16 +3,24 @@
 // reverseArray([10,20,86,42,68,94,56]) => [56, 94, 68, 42, 86, 20, 10]]
 
 var input = [10,20,86,42,68,94,56];
-var output = [];
-var j = 0 ;
 
 // 7 
-for(var i = input.length-1 ; i >= 0; i--){ 
-    output[j] = input [i];
+function reverseArray(array){
+    var output = [];
+    var j = 0 ;
+//     for(var i = array.length-1 ; i >= 0; i--){ 
+//     output[j] = array [i];
+//     j++;
+//     }
+    var i = array.length-1;
+    while(i >= 0){
+    output[j] = array[i];
     j++;
-    // console.log(i)
+    i--;  
 }
 
+return output;
+}
 // i = 6
 // output[0] = input[6]
 // i = 5
@@ -29,25 +37,32 @@ for(var i = input.length-1 ; i >= 0; i--){
 // output[6] = input[0]
 
 
-console.log(output) // [56, 94, 68, 42, 86, 20, 10]
+console.log(reverse(input)) // [56, 94, 68, 42, 86, 20, 10]
 
 
 // Try solving without using j
 
-var input = [10,20,86,42,68,94,56];
+// var input = [10,20,86,42,68,94,56];
 
 
-function reverse(){
+function reverse(array){
 
     var output = [];
     var j = 0 ;
-    for(var i = input.length-1 ; i >= 0; i--){ 
-        output[j] = input [i];
-        j++;
-        // console.log(i)
-    }
-    return output;
+    // for(var i = array.length-1 ; i >= 0; i--){ 
+    //     output[j] = input [i];
+    //     j++;
+    //     // console.log(i)
+    var i = array.length-1;
+    while(i >= 0){
+    output[j] = array[i];
+    j++;
+    i--;  
 }
+
+return output;
+}
+
 
 console.log(reverse(input))
 
