@@ -1,4 +1,4 @@
-// ========================== Not operator ========================== 
+// ==================================================== 
 var str1 = 'Hello';
 var str2 = 'World';
 
@@ -14,7 +14,7 @@ console.log(str2.concat(', ', str1));
 
 
 
-// ========================== Not operator ========================== 
+// ==================================================== 
 var str = 'The quick brown fox jumps over the lazy dog.';
 
 var words = str.split(' ');
@@ -31,14 +31,14 @@ console.log(strCopy);
 
 
 
-// ========================== Not operator ========================== 
+// ==================================================== 
 var p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
 
 console.log(p.replace('dog', 'monkey'));
 // expected output: "The quick brown fox jumps over the lazy monkey. If the dog reacted, was it really lazy?"
 
 
-// ========================== Not operator ========================== 
+// ==================================================== 
 var p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
 
 console.log(p.replaceAll('dog', 'monkey'));
@@ -48,7 +48,7 @@ console.log(p.replaceAll('dog', 'monkey'));
 
 
 
-// ========================== Not operator ========================== 
+// ==================================================== 
 var studentId = 10;
 
 console.log(studentId + 10);
@@ -58,14 +58,14 @@ console.log(studentId.toString() + 10);
 
 
 
-// ========================== Not operator ========================== 
+// ==================================================== 
 var sentence = 'The quick brown fox jumps over the lazy dog.';
 
 console.log(sentence.toUpperCase());
 // expected output: "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."
 
 
-// ========================== Not operator ========================== 
+// ========================== ToLowerCse ========================== 
 var sentence = 'The quick brown fox jumps over the lazy dog.';
 
 console.log(sentence.toLowerCase());
@@ -74,6 +74,7 @@ console.log(sentence.toLowerCase());
 
 
 
+// ========================== Removing pre and trailing space from a string ========================== 
 var greeting = '   Hello world!   ';
 
 console.log(greeting);
