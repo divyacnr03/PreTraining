@@ -5,11 +5,18 @@ var todayWeather = {
     },
     "weather": [
       {
+        "id": 803,
+        "main": "Rains",
+        "description": "heavy clouds",
+        "icon": "03d"
+      },
+      {
         "id": 802,
         "main": "Clouds",
         "description": "scattered clouds",
         "icon": "03d"
       }
+
     ],
     "base": "stations",
     "main": {
@@ -24,7 +31,8 @@ var todayWeather = {
       "speed": 3.36
     },
     "clouds": {
-      "all": 40
+      "all": 40,
+      // "moreInfo" : {type :'clear', probility : '80%'}
     },
     "dt": 1566664878,
     "sys": {
@@ -43,4 +51,36 @@ var todayWeather = {
 
 
 
-//   In our scenario , we want to pull out the wind speed part of the JSON response. Here’s the dot notation you use:
+//   In our scenario , we want to pull out the wind speed 
+// console.log(todayWeather.wind.speed)
+
+
+
+//   In our scenario , we want to pull out weather info second item
+// console.log(todayWeather.weather[1])
+
+
+//   In our scenario , we want to pull out weather info of only the id 803
+for(var i= 0; i < todayWeather.weather.length; i++){
+  if(todayWeather.weather[i].id === 803){
+    // console.log(todayWeather.weather[i])
+  }
+}
+
+
+// console.log(todayWeather.weather[1].id === 803)
+
+
+// Add clouds to add a object {type :'clear', probility : 80%} within the key moreInfo
+//     "clouds": {
+//   "all": 40,
+//   "moreInfor" : {type :'clear', probility : 80%}
+
+// },
+
+var moreInfo = {type :'clear', probility : '80%'};
+
+
+todayWeather.clouds['moreInfo'] = {type :'clear', probility : '80%'};
+
+console.log(todayWeather)

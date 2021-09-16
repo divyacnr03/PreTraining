@@ -1,8 +1,12 @@
 var student = {
     name : "vikram",
     id : 123,
-    parents : [],
-    department
+    classes : ['bussiness', 'economics', 'French'],
+    department : {
+        name : 'cse',
+        hod : 'vinay',
+        staffs : 30
+    }
 }
 
 
@@ -10,8 +14,14 @@ var student = {
 // accessing the department details 
 
 
+// print the numbe of staffs in the dept that vikram is associated to 
+console.log(student.department.staffs)
+console.log(student.department["staffs"])
+console.log(student["department"]["staffs"])
+console.log(student["department"].staffs)
 
 
 
 
-// 
+
+

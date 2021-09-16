@@ -30,17 +30,34 @@ var albums = [
         "artist": "Pearl Jam",
         "unitsSold": 4770000
     }
-  ]
+]
+
+
+console.log(albums)
+
+// Code to print all the names of the albums
+// Bleach, Nervermind, In Utero, Ten , Vs, Vitalogy
+for (var i = 0; i < albums.length; i++) {
+    console.log(albums[i].name);
+    // console.log(albums[i]["name"]);
+}
 
 
 
-  // Code to print all the names of the albums
+// Summ of all the unitSold
+
+var result = 0;
+for (var i = 0; i < albums.length; i++) {
+    result += albums[i].unitsSold;
+}
+console.log(result)
 
 
+  // Print all the ablums by artist "Pearl Jam" ie. Ten Vs, Vitalogy
 
-
-  // Summ of all the unitSold
-
-
-
-  // all the ablums by artist "Pearl Jam"
+for (var i=0; i<albums.length; i++){
+	if(albums[i].artist == "Pearl Jam")
+	{
+		console.log(albums[i].name)
+	}
+}
