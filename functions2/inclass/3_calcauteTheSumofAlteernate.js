@@ -1,19 +1,19 @@
 // Write a function to return the sum of only the alternate array elements
+// var inputArray = [10,20,86,42,68,94,56];
+// var sumOfOddIndexNumber = 0;
+
+// for(var i = 1 ; i < inputArray.length; i = i + 2){
+//     sumOfOddIndexNumber += inputArray[i]
+// }
+
+// // i = 1
+// // sumOfOddIndexNumber = sumOfOddIndexNumber + inputArray[1]
+// // inputArray[1] + inputArray[3] + inputArray[5]
+
+
+// // console.log(sumOfOddIndexNumber)  // 20 + 42 + 94
+
 var inputArray = [10,20,86,42,68,94,56];
-var sumOfOddIndexNumber = 0;
-
-for(var i = 1 ; i < inputArray.length; i = i + 2){
-    sumOfOddIndexNumber += inputArray[i]
-}
-
-// i = 1
-// sumOfOddIndexNumber = sumOfOddIndexNumber + inputArray[1]
-// inputArray[1] + inputArray[3] + inputArray[5]
-
-
-// console.log(sumOfOddIndexNumber)  // 20 + 42 + 94
-
-
 
 
 
