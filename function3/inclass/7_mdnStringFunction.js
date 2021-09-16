@@ -27,8 +27,11 @@ console.log(chars[8]);
 
 var strCopy = str.split();
 console.log(strCopy);
-// expected output: Array ["The quick brown fox jumps over the lazy dog."]
+// expected output: Array ["The, quick ,brown, fox, jumps over the lazy dog."]
 
+
+str = '1,2,3,4,5'
+strArray = [1,2,3,4,5]
 
 
 // ==================================================== 

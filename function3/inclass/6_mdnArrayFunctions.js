@@ -1,11 +1,11 @@
-// Add new element into array 
-var animals = ['pigs', 'goats', 'sheep'];
+// // Add new element into array 
+// var animals = ['pigs', 'goats', 'sheep'];
 
-animals.push('cows');
+// animals.push('cows');
 
-animals.push('chickens', 'cats', 'dogs');
+// animals.push('chickens', 'cats', 'dogs');
 
-
+// console.log(animals)
 
 
 // ====================================================  
@@ -24,7 +24,7 @@ console.log(pets.includes('at'));
 
 
 
-// ==================================================== 
+// // ==================================================== 
 
 var beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
 
@@ -42,7 +42,7 @@ console.log(beasts.indexOf('giraffe'));
 
 
 
-// ==================================================== 
+// // ==================================================== 
 var elements = ['Fire', 'Air', 'Water'];
 
 console.log(elements.join());

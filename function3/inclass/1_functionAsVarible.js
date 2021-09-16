@@ -1,6 +1,18 @@
-var test = function (){
-    console.log("inside function")
+var print = function (){
+    console.log("hi there")
 }
 
-test();
-console.log(test)
+
+print();
+
+
+console.log(print)
+
+
+
+
+
+
+// __function (){console.log("hi there") }__
+// print
+// 23434

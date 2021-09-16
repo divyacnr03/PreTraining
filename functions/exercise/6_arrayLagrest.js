@@ -30,9 +30,6 @@ function longestCountryName(inputArray){
 
 
 
-jdfkgjlkh
-
-
 
 
 console.log(longestCountryName(["Australia", "Germany", "United States of America","India"]))  // "United States of America"
