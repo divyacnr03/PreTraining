@@ -1,55 +1,39 @@
-// destructuring
-var obj = {
-  name: 'Joe',
-  food: 'cake'
-};
+// // simple destructuring
+// var student = {
+//   name : "vinay",
+//   id: 300
+// }
 
 
-var { name, food } = obj;
+// // var name = student.name;
+// // var id = student.name;
 
-console.log(name, food);
+// var { name, id} = student;
 
-
-
-
-
+// console.log(name, id)
 
 
+// // desturcting with a different name
+
+// var student = {
+//   name : "vinay",
+//   id: 300
+// }
 
 
+// // var studentName = student.name;
+// // var studentId = student.name;
 
+// var { name : studentName, id: studentId} = student;
 
-
-
-
-
-
-
-
-
-
-
+// console.log(studentName, studentId)
 
 
 
-// desturcting with a different name
-var obj = {
-  name: 'Joe',
-  food: 'cake'
-};
-
-
-var obj2 = {
-  name: 'Joe',
-  food: 'cake'
-};
-
-var { name: myName, food: myFood } = obj;
-var { name: myName2, food: myFood2 } = obj2;
-
-
-console.log(myName, myFood);
-
+// // array
+// var someArray = [10, 20];
+// var [ a ,b ] = someArray;
+// console.log(a,b)
 
 
 
@@ -60,46 +44,42 @@ console.log(myName, myFood);
 
 
 // Sending Objects are function arguments
-var person = {
-  name: 'Eddie',
-  age: 24
-};
 
-function introduce(person) {
-  console.log(`I'm ${person.name} and I'm ${person.age} years old!`); // alternate way to concate strings with varibles
-}
-
-introduce(person);
+// var student = {
+//   name : "vinay",
+//   id: 300
+// }
 
 
+// function printStudentDetails (studentInfromation){
+//   console.log("The student name is " + studentInfromation.name + " Id is " + studentInfromation.id)
+//   console.log(`The student name is  ${studentInfromation.name}  Id is ${studentInfromation.id}`)
+// }
+
+// printStudentDetails(student)
+// printStudentDetails({
+//   name : "vinay",
+//   id: 300
+// })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// var soemthing = "something"
+// console.log(`the value of  ${soemthing}  if printed`)
 
 
 // destructuring can be (and often is) used directly for extracting parameters passed to a function.
 
-var person = {
-  name: 'Eddie',
-  age: 24
-};
-
-function introduce({ name, age }) {
-  console.log(`I'm ${name} and I'm ${age} years old!`);
+var student = {
+  name : "vinay",
+  id: 300
 }
 
-introduce(person);
+
+function printStudentDetails ({ name , id }){
+  console.log(`The student name is  ${name}  Id is ${id}`)
+}
+
+printStudentDetails(student)
+
 
 
