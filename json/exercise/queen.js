@@ -11,8 +11,8 @@
 
 
 
-X ; 7
-y : 2
+// X ; 7
+// y : 2
 
 
 // Moving the the queen
@@ -23,11 +23,6 @@ y : 2
 // 4) Queen's current location is representatd by x and y
 
 
-var queen = {
-    x : 4,
-    y: 4,
-    // moveRight, moveLeft, moveUp, moveDown, isMovementAllowed
-}
 
 
 // write 6 functions - moveRight, moveLeft, moveUp, moveDown
@@ -41,5 +36,45 @@ var queen = {
 
 
 
+var queen = {
+    x : 8,
+    y: 8,
+    moveRight : function({x,y}){
+        console.log("queen can move Right", x+1 , y)
+    },
+    moveLeft : function({x,y}){
+        console.log("queen can move Left", x-1 , y)
+    },
+    moveUp : function({x,y}){
+        console.log("queen can move Up", x, y-1)
+    },
+    moveDown : function({x,y}){
+        console.log("queen can move Down", x, y+1)
+    },
+    isMovementAllowed : function({x,y}) {
+        if( x === 8 && y === 8 ){
+            return true
+        }
+        
+    }
+    // moveRight, moveLeft, moveUp, moveDown, isMovementAllowed
+
+}
 
 
+function playerTurn(move){
+      if(move === 'moveRight' || move === 'moveDown'){
+      if(queen.isMovementAllowed(queen) === true){
+        console.log("Operation not permitted")
+      }
+    }    
+      
+      queen[move](queen)
+      
+}
+    
+
+playerTurn('moveRight')
+playerTurn('moveLeft')
+playerTurn('moveUp')
+playerTurn('moveDown')
