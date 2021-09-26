@@ -1,0 +1,15 @@
+.helloclass {
+    color: blue;
+ }
+ .hellofont {
+    font-family: sans-serif;
+    background-color: aliceblue !important;
+ }
+ #canada {
+    font-family: sans-serif;
+    background-color: beige;
+ }
+
+ td{
+    text-align: center;
+ }
